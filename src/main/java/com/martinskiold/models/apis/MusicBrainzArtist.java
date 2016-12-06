@@ -1,6 +1,6 @@
-package com.martinskiold.Models.APIs;
+package com.martinskiold.models.apis;
 
-import com.martinskiold.Models.Album;
+import com.martinskiold.models.Album;
 
 import java.util.ArrayList;
 import java.util.List;

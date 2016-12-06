@@ -1,4 +1,4 @@
-package com.martinskiold.Services.JSONResponseExtractors;
+package com.martinskiold.services.jsonextractors;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

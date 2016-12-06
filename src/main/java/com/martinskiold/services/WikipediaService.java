@@ -1,6 +1,6 @@
-package com.martinskiold.Services;
+package com.martinskiold.services;
 
-import com.martinskiold.Services.JSONResponseExtractors.WikipediaResponseExtractor;
+import com.martinskiold.services.jsonextractors.WikipediaResponseExtractor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.client.RestTemplateBuilder;

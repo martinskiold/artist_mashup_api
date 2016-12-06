@@ -1,9 +1,9 @@
-package com.martinskiold.Services;
+package com.martinskiold.services;
 
-import com.martinskiold.Exceptions.ResourceNotFoundException;
-import com.martinskiold.Models.APIs.MusicBrainzArtist;
-import com.martinskiold.Models.Album;
-import com.martinskiold.Services.JSONResponseExtractors.MusicBrainzResponseExtractor;
+import com.martinskiold.exceptions.ResourceNotFoundException;
+import com.martinskiold.models.apis.MusicBrainzArtist;
+import com.martinskiold.models.Album;
+import com.martinskiold.services.jsonextractors.MusicBrainzResponseExtractor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.client.RestTemplateBuilder;

@@ -1,4 +1,4 @@
-package com.martinskiold.Models;
+package com.martinskiold.models;
 
 /**
  * Additional error information.

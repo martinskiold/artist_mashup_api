@@ -1,9 +1,9 @@
-package com.martinskiold.Services;
+package com.martinskiold.services;
 
-import com.martinskiold.Exceptions.ResourceNotFoundException;
-import com.martinskiold.Models.APIs.MusicBrainzArtist;
-import com.martinskiold.Models.Album;
-import com.martinskiold.Models.Artist;
+import com.martinskiold.exceptions.ResourceNotFoundException;
+import com.martinskiold.models.apis.MusicBrainzArtist;
+import com.martinskiold.models.Album;
+import com.martinskiold.models.Artist;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -66,9 +66,9 @@ public class ArtistService {
             }
 
 
-            //Wait for responses to finish
-            waitForResponses(Collections.singletonList(wikiArtistDescriptionResponse));
-            waitForResponses(caaAlbumCoverResponses);
+            //Wait for responses to finish UPDATE: NOT NEEDED due to wait in Future<..> get method
+            //waitForResponses(Collections.singletonList(wikiArtistDescriptionResponse));
+            //waitForResponses(caaAlbumCoverResponses);
 
 
             //Adding cover urls to albums
@@ -89,6 +89,7 @@ public class ArtistService {
         catch(Exception e)
         {
             //Rethrow exception only if its an ResourceNotFoundException
+            //Or throw WebApplicationException
             if(e.getCause() instanceof ResourceNotFoundException)
             {
                 throw e;
@@ -99,6 +100,7 @@ public class ArtistService {
     }
 
     /**
+     *  DEPRECATED - Future's get method automatically waits until response is ready.
      *  Waits until the responses are complete. No idling. Waiting is implemented by sleeping the thread at 20ms intervals.
      */
     private <T> void waitForResponses(List<Future<T>> responses)

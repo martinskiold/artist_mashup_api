@@ -1,8 +1,8 @@
-package com.martinskiold.Controllers;
+package com.martinskiold.controllers;
 
-import com.martinskiold.Exceptions.ResourceNotFoundException;
-import com.martinskiold.Services.ArtistService;
-import com.martinskiold.Models.Artist;
+import com.martinskiold.exceptions.ResourceNotFoundException;
+import com.martinskiold.services.ArtistService;
+import com.martinskiold.models.Artist;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,7 +34,8 @@ public class ArtistController {
         {
             Future<Artist> artistResponse = artistService.getArtist(mbid);
 
-            while(!artistResponse.isDone()){Thread.sleep(20);}  //Waits for response completion
+            // NOT NEEDED. Future's get method automatically waits for service response
+            // while(!artistResponse.isDone()){Thread.sleep(20);}  //Waits for response completion
 
             artist = artistResponse.get();
         }

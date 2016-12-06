@@ -1,12 +1,12 @@
-package com.martinskiold.Exceptions;
+package com.martinskiold.exceptions;
 
-import com.martinskiold.Models.ServiceError;
+import com.martinskiold.models.ServiceError;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
  * An exception that represents HTTP 404 Not Found error.
- * When thrown from a controller, Spring invokes a HTTP 404 Not Found error message.
+ * When thrown from a controller, Spring invokes a HTTP 404 Not Found error message using @ResponseStatus annotation.
  *
  * Created by martinskiold on 11/27/16.
  */

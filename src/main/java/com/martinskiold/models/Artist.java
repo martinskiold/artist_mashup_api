@@ -1,4 +1,4 @@
-package com.martinskiold.Models;
+package com.martinskiold.models;
 
 import java.util.ArrayList;
 import java.util.List;
