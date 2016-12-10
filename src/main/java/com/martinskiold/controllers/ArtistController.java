@@ -13,6 +13,8 @@ import java.util.concurrent.Future;
 
 /**
  * RESTController that handles endpoints for the Artist resource.
+ * Endpoint example: http://localhost:8080/artist?mbid=5b11f4ce-a62d-471e-81fc-a69a8278c7da
+ * MBid from MusicBrainz API
  *
  * Created by martinskiold on 11/24/16.
  */

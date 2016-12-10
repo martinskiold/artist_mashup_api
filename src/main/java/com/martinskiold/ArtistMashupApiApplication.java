@@ -11,9 +11,9 @@ import org.springframework.scheduling.annotation.EnableAsync;
  */
 @SpringBootApplication
 @EnableAsync
-public class CygniBackendMartinskioldApplication {
+public class ArtistMashupApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CygniBackendMartinskioldApplication.class, args);
+		SpringApplication.run(ArtistMashupApiApplication.class, args);
 	}
 }
