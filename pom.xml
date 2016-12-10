@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.martinskiold</groupId>
-	<artifactId>cygni_backend_martinskiold</artifactId>
+	<artifactId>artist_mashup_api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>cygni_backend_martinskiold</name>
-	<description>Demo project for Spring Boot</description>
+	<name>artist_mashup_api</name>
+	<description>REST API for artist information</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
